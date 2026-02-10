@@ -37,7 +37,7 @@ spec:
               ## Optional SSH public key data (must be valid)
               sshPublicKey: ''
               networkPluginMode: overlay
-              kubernetes_version: "v1.31.0"
+              kubernetes_version: "v1.31.13"
             defaults:
               agentPool:
                 sku: Standard_D2s_v3
