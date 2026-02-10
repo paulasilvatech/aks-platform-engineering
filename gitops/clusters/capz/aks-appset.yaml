@@ -34,6 +34,7 @@ spec:
             controlplane:
               ## Optional SSH public key data (must be valid)
               sshPublicKey: ''
+              networkPluginMode: overlay
             defaults:
               agentPool:
                 sku: Standard_D2s_v3
