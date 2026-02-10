@@ -27,6 +27,8 @@ spec:
         helm:
           valuesObject:
             subscriptionID: '{{metadata.annotations.subscription_id}}'
+            cluster:
+              location: eastus2
             identity:
               clientID: '{{metadata.annotations.akspe_identity_id}}'
               tenantID: '{{metadata.annotations.tenant_id}}'
@@ -38,6 +40,8 @@ spec:
             defaults:
               agentPool:
                 sku: Standard_D2s_v3
+                availabilityZones:
+                  - "1"
       syncPolicy:
         automated:
           selfHeal: true
